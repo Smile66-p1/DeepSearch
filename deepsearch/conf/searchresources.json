@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Ahmia",
+    "URL": "https://ahmia.fi/",
+    "status": "online",
+    "last_check": "11.02.2025 10:22",
+    "request_profile": {
+      "type": "request",
+      "url": "https://ahmia.fi/search/?q=%s",
+      "tor_network": false
+    },
+    "html_parser_result_profile": {
+      "block": "li.result",
+      "title": {
+        "selector": "a[href]",
+        "attribut": "content"
+      },
+      "URL_result": {
+        "selector": "a[href]",
+        "attribut": "href",
+        "filters": {
+          "remove_before": "redirect_url="
+        }
+      }
+    }
+  },
+  {
+    "name": "FreshOnion",
+    "URL": "http://5f447y3gnmt6mt2ai52o3m6fp6dpgr56lycxfuvuf32pd4ypynzlu3yd.onion/",
+    "status": "online",
+    "last_check": "11.02.2025 10:22",
+    "request_profile": {
+      "type": "request",
+      "url": "http://5f447y3gnmt6mt2ai52o3m6fp6dpgr56lycxfuvuf32pd4ypynzlu3yd.onion/?q=%s",
+      "tor_network": true
+    },
+    "html_parser_result_profile": {
+      "block": "tr.alive",
+      "title": {
+        "selector": "a[href]",
+        "attribut": "content"
+      },
+      "URL_result": {
+        "selector": "a[href]",
+        "attribut": "href",
+        "filters": {}
+      }
+    }
+  },
+  {
+    "name": "JustOnion",
+    "URL": "http://justdirs5iebdkegiwbp3k6vwgwyr5mce7pztld23hlluy22ox4r3iad.onion/",
+    "status": "online",
+    "last_check": "11.02.2025 10:22",
+    "request_profile": {
+      "type": "request",
+      "url": "http://justdirs5iebdkegiwbp3k6vwgwyr5mce7pztld23hlluy22ox4r3iad.onion/search/%s",
+      "tor_network": true
+    },
+    "html_parser_result_profile": {
+      "block": "li.uphead",
+      "title": {
+        "selector": "a[href]",
+        "attribut": "content"
+      },
+      "URL_result": {
+        "selector": "a.miniurl",
+        "attribut": "content",
+        "filters": {}
+      }
+    }
+  },
+  {
+    "name": "TorLib",
+    "URL": "http://torlib7fmhyvfv2k7s77xigdds3rosio6k6bxnn256xmtzlbgyizduqd.onion/",
+    "status": "online",
+    "last_check": "11.02.2025 10:22",
+    "request_profile": {
+      "type": "request",
+      "url": "http://torlib7fmhyvfv2k7s77xigdds3rosio6k6bxnn256xmtzlbgyizduqd.onion/search?u=on&q=%s",
+      "tor_network": true
+    },
+    "html_parser_result_profile": {
+      "block": "div.result_item",
+      "title": {
+        "selector": "a[href]",
+        "attribut": "content"
+      },
+      "URL_result": {
+        "selector": "a[href]",
+        "attribut": "href",
+        "filters": {}
+      }
+    }
+  },
+  {
+    "name": "OnionRanks",
+    "URL": "http://rankspeslx4jwbalykpdrn4zsdfuqq25wiioy3ibvjlbgshfph7jtqad.onion/",
+    "status": "online",
+    "last_check": "11.02.2025 10:22",
+    "request_profile": {
+      "type": "request",
+      "url": "http://rankspeslx4jwbalykpdrn4zsdfuqq25wiioy3ibvjlbgshfph7jtqad.onion/search?query=%s",
+      "tor_network": true
+    },
+    "html_parser_result_profile": {
+      "block": "div.card",
+      "title": {
+        "selector": "div.pr-lg-3 div.mt-xl-0 p.text-muted",
+        "attribut": "content"
+      },
+      "URL_result": {
+        "selector": "span.align-top",
+        "attribut": "content",
+        "filters": {}
+      }
+    }
+  }
+]
